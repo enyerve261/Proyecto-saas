@@ -1,11 +1,10 @@
-
 {
   "name": "website",
   "version": "2.4.14",
   "private": true,
   "author": "Eelco Wiersma <eelco@appulse.nl>",
   "scripts": {
-    "dev": "concurrently \"contentlayer2 dev\" \"next dev --port 3020\"",
+    "dev": "concurrently \"contentlayer2 dev\" \"next dev\"",
     "dev:next": "next dev --port 3020",
     "dev:contentlayer": "contentlayer2 dev",
     "build": "yarn gen:contentlayer && next build",
@@ -18,12 +17,13 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@ark-ui/react": "^4.3.0",
-    "@chakra-ui/next-js": "^2.4.3",
-    "@chakra-ui/props-docs": "^2.4.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "@chakra-ui/react": "^2.10.4",
     "@chakra-ui/react-env": "^3.1.0",
-    "@emotion/react": "^11.13.3",
+    "@chakra-ui/next-js": "^2.4.3",
+    "@chakra-ui/props-docs": "^2.4.3",
+    "@emotion/react": "^11.13.0",
     "@emotion/styled": "^11.13.0",
     "@fontsource-variable/inter": "^5.1.0",
     "@mapbox/rehype-prism": "^0.9.0",
@@ -31,24 +31,24 @@
     "@next/bundle-analyzer": "^14.2.14",
     "@octokit/rest": "^21.0.2",
     "@radix-ui/react-navigation-menu": "^1.2.1",
-    "@supabase/ssr": "^0.5.1",
     "@supabase/supabase-js": "^2.45.4",
+    "@supabase/ssr": "^0.5.1",
     "@svgr/webpack": "^5.5.0",
     "@vercel/og": "^0.6.3",
     "canvas-confetti": "^1.9.3",
     "change-case": "^5.4.4",
     "contentlayer2": "^0.5.3",
-    "date-fns": "^3.6.0"
+    "date-fns": "^3.6.0",
+    "next": "13.5.6"
   },
   "devDependencies": {
     "@netlify/plugin-nextjs": "^4.41.3",
     "@types/node": "^18.19.5",
-    "@types/react": "^18.3.1",
-    "electron-to-chromium": "^1.5.31",
+    "@types/react": "^18.2.41",
     "eslint": "^8.57.1",
     "eslint-config-next": "^14.2.14",
     "file-loader": "^6.2.0",
-    "typescript": "^5.0.2",
-    "webpack": "^5.90.0"
+    "typescript": "^5.0.4",
+    "webpack": "^5.0.0"
   }
 }
